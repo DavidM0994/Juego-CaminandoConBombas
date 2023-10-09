@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jueguito caminando con bombas</title>
+</head>
+<body>
+    <div class="containerJuego">
+        <h1 class="titulo">Caminito con bombas</h1>
+        <canvas class="juego" id="canvas"></canvas>
+        <div class="conainerBtbInfo">
+            <div class="containerInformacion">
+                <p class="vidas infoText">Vidas:</p>
+                <p class="tiempo infoText">Tiempo:</p>
+                <p class="records infoText">Records:</p>
+            </div>
+            <div class="containerBtn">
+                <button class="divBtn1 btn btnUp">Up</button>
+                <div class="divBtn2">
+                    <button class="btn btnLeft">Left</button>
+                    <button class="btn btnRight">Right</button>
+                </div>
+                <button class="divBtn2 btn btnDown">Down</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./maps.js"></script>
+    <script src="./game.js"></script>
+</body>
+</html>

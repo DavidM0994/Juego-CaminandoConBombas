@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.containerJuego{
+    background: radial-gradient(
+    119% 107% at 50% 50%,
+    rgba(0, 71, 89, 0) 12%,
+    rgba(0, 250, 237, 1) 84%
+    );
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 0;
+}
+.titulo{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+    animation: cssAnimation_0 300ms infinite ease-out;
+    font: normal bolder 25px/2.3 "proxima-nova";
+    letter-spacing: 10px;
+    margin: 10px 0 10px 0;
+    padding: 0 10px;
+}
+@keyframes cssAnimation_0 {
+    to {
+      color: rgb(185, 60, 60);
+      border-radius: 4px;
+    }
+  }
+.juego{
+    border: 11px solid rgba(128, 71, 18, 1);
+    border-radius: 13px;
+    background-color: rgba(10, 255, 43, 1);
+}
+.conainerBtbInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 0 20px;
+}
+.containerBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.749);
+    padding: 5px 20px;
+    margin: 2px 0 0 0;
+    border: 4px solid rgba(0, 0, 255, 0.496);
+    border-radius: 10px;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blue;
+    color: beige;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    color: aqua;
+    background-color: rgb(255, 0, 0);
+}
+.containerInformacion{
+    align-self: center;
+}
+.infoText{
+    font-weight: bold;
+    margin: 2px 0 0 0;
+    color: rgb(156, 16, 175);
+    animation: cssAnimation_1 600ms infinite ease-out;
+}
+@keyframes cssAnimation_1 {
+    to {
+      color: rgb(255, 0, 0);
+    }
+  }
+@media (max-width: 550px){
+    .containerJuego{
+        background-color: black;
+    }
+    .titulo{
+        font: normal bolder 15px/2.3 "proxima-nova";
+    }
+    .conainerBtbInfo{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 350px;
+        padding: 0 20px;
+    }
+    .containerInformacion{
+        align-self: flex-start;
+        margin: 10px 0 0 0;
+    }
+}
+@media (max-width: 380px){
+    .containerJuego{
+        background-color: rgb(247, 0, 0);
+    }
+    .conainerBtbInfo{
+        width: 300px;
+    }
+}
